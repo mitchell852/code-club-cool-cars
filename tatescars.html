@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Yo </title>
+        <link src="tate.css"></link>
     </head>
     <body>
-        <table>
-            <tr>
-                <th>Car</th>
-                <th>
-                    Description
-                </th>
-            <tr>
-                <td><a href="#adventador"></a></td>
-            </tr>
-            </tr>
-            <img id="adventador" src="http://www.lambojack.com/France_and_Italy_2011/Rubiera%20and%20Factory/Aventador%20Front.jpg" width="500" height"500">
-        </table>
+        <ul>
+            <li><a href="#adventador">Lamborghini Adventador</a></li>
+            <li><a href="#agerar">Koenigsegg Agera R</a></li>
+        </ul>
+        <img class="car" id="adventador" src="http://www.lambojack.com/France_and_Italy_2011/Rubiera%20and%20Factory/Aventador%20Front.jpg" width="500" height"500">
+        <img class="car" id="agerar"src="http://justinlovespanici.weebly.com/uploads/2/6/5/6/26564017/s416419925971200469_p1_i3_w570.jpeg" width="500" length="500">
+        <script>
+        $(document).ready(function () {
+               $("a").on("click", function (event) {
+                   $(".car").removeClass("carbord");
+                    var id = event.target.id;
+                   $("#" + id + "-image").addClass("carbord");
+                   
+                    
+               });
+            });
+            </script>
     </body>
 </html>

@@ -12,6 +12,8 @@
         <li><a id="koea" href="#koea-image">#1 Koenigsegg Agera</a></li>
         <li><a id="viper" href="#viper-image">#8 Viper GTS</a></li>
         <li><a id="mcp1" href="#mcp1-image">#5 McLaren P1</a></li>
+        <li><a id="transtar" href="#transtar-image">#7 Transtar Dagger Gt</a></li>
+        <li><a id="ssc" href="#ssc-image">#6 SSC Tuatar</a></li>
     </ul>
         <div id="adv-image" class="car"><img src="http://media.caranddriver.com/images/media/51/2016-lamborghini-aventador-lp750-4-sv-inline2-photo-667602-s-original.jpg" width="500" length="500"></div> <br>
         <div id="koe-image" class="car"><img src="https://cdn-carwitter.netdna-ssl.com/wp-content/uploads/2015/09/Koenigsegg-One-1-Front-carwitter.jpg" width="600" height="500"> </div> <br>
@@ -19,16 +21,15 @@
         <div id="koea-image" class="car"><img src="http://www.wallpapermade.com/images/wallpapers/originals/red-koenigsegg-agera-r-front-view-wallpaper-5286.jpg" width="500" length="500"></diV><br>
         <div id="viper-image" class="car"><img src="http://www.motortrends.org/wp-content/uploads/2015/10/2015-Dodge-Viper-GTS-R-Front-View-Wallpaper.jpg" width="500" length="500"></div>
         <div id="mcp1-image" class="car"><img src="http://images.fineartamerica.com/images-medium-large-5/mclaren-p1-plug-in-hybrid-supercar-front-oleksiy-maksymenko.jpg" width="500" length="500"></div>
+        <div id="transtar-image" class="car"><img src="http://soec.org/wp-soec/wp-content/uploads/2010/07/news_2011_transtar-racing-dagger-gt-09.jpg" width="500" length="500"></div>
+        <div id="ssc-image" class="car"><img src="http://www.autospies.com/images/users/SCG99/main/ssc-tuatara-pricing-1.jpg" width="500" length="500"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script>
        $(document).ready(function () {
                $("a").on("click", function (event) {
                    $(".car").removeClass("carbord");
-
                     var id = event.target.id;
                    $("#" + id + "-image").addClass("carbord");
-                   
-                    
                });
             });
             </script>

@@ -1,3 +1,6 @@
 .carbord {
     border:dashed blue 2px;
 }
+.invisible {
+    display:none;
+}

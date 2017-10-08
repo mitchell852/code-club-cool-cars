@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Awesome Cars</title>
-        <link rel="stylesheet" href="styles/tate.css"></link>
+        <link rel="stylesheet" href="Tate/tate.css"></link>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
@@ -108,20 +108,9 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="scripts/tate.js"></script>
         <script>
-       $(document).ready(function () {
-               $("a").on("click", function (event) {
-                   $(".car").removeClass("carbord");
-                    var id = event.target.id;
-                   $("#" + id + "-div").addClass("carbord");
-               });
-            
-            $(".car-image").on('click', function(){
-                $(this).closest("div").find(".car-image").toggleClass("invisible")
-                $(".car-side-image").closest("div").find(".car-side-image").toggleClass("side-invisible")
-               
-            });
-       });
+      
             </script>
     </body>
 </html>
